@@ -50,5 +50,8 @@ TagManager:
   - name: Candy
     uniqueID: 260043585
     locked: 0
+  - name: UI
+    uniqueID: 2696020731
+    locked: 0
   m_RenderingLayers:
   - Default

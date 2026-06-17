@@ -10,7 +10,7 @@ public class QuestManager : MonoBehaviour
     public int targetCandyType = 3;
     public int targetCount = 100;
     private int currentCount = 0;
-    private bool isQuestDone = false; // BỔ SUNG: Kiểm tra trạng thái đã hoàn thành chưa
+    private bool isQuestDone = false; // Trạng thái đã hoàn thành nhiệm vụ hay chưa
 
     [Header("UI References (Hình ảnh & Con số)")]
     public Image questIconImage;
@@ -28,7 +28,7 @@ public class QuestManager : MonoBehaviour
     private void Start()
     {
         currentCount = 0;
-        isQuestDone = false; // BỔ SUNG: Reset trạng thái khi bắt đầu game
+        isQuestDone = false; // Reset trạng thái khi bắt đầu game
 
         if (questIconImage != null && targetCandySprite != null)
         {
@@ -40,7 +40,7 @@ public class QuestManager : MonoBehaviour
 
     public void CheckCandyDestroyed(int candyType)
     {
-        // BỔ SUNG: Nếu game đã kết thúc (thua do hết lượt) thì ngừng đếm kẹo
+        // Nếu game đã kết thúc (thua do hết lượt hoặc đã thắng trước đó) thì ngừng đếm kẹo
         if (MoveManager.Instance != null && MoveManager.Instance.IsGameOver()) return;
 
         if (candyType == targetCandyType)
@@ -52,7 +52,7 @@ public class QuestManager : MonoBehaviour
 
             UpdateQuestUI();
 
-            // SỬA ĐỔI: Kiểm tra điều kiện thắng chuẩn xác hơn
+            // Kiểm tra điều kiện thắng chuẩn xác hơn
             if (currentCount >= targetCount && !isQuestDone)
             {
                 isQuestDone = true;
@@ -71,11 +71,34 @@ public class QuestManager : MonoBehaviour
 
     private void OnQuestComplete()
     {
-        Debug.Log("🎉 Hoàn thành nhiệm vụ thu thập kẹo! CHIẾN THẮNG!");
-        // Bạn có thể kích hoạt Popup Thắng Cuộc (Win Panel) tại đây
+        Debug.Log("🎉 Hoàn thành nhiệm vụ thu thập kẹo! Kích hoạt hiệu ứng CHIẾN THẮNG!");
+
+        // 1. Đồng bộ sang StarManager để xử lý đồng thời thanh Slider/Star ngoài giao diện chính
+        if (StarManager.Instance != null)
+        {
+            StarManager.Instance.CompleteQuestAndEarnThirdStar();
+        }
+
+        // 2. Lấy số điểm hiện tại từ ScoreManager để hiển thị lên bảng Win
+        int finalScore = 0;
+        if (ScoreManager.Instance != null)
+        {
+            finalScore = ScoreManager.Instance.currentScore;
+        }
+
+        // 3. SỬ ĐỔI: Gọi trực tiếp màn hình WinGame và gửi tín hiệu ép hiển thị 3 sao
+        if (WinGame.Instance != null)
+        {
+            // Tham số thứ hai truyền vào là true -> Chỉ định thắng nhờ Quest -> Tự động kích hoạt 3 sao lấp lánh!
+            WinGame.Instance.ShowWinWindow(finalScore, true);
+        }
+        else
+        {
+            Debug.LogWarning("Không tìm thấy Instance của script WinGame trong Scene hiện tại!");
+        }
     }
 
-    // BỔ SUNG HÀM NÀY: Để MoveManager gọi kiểm tra xem người chơi đã gom đủ kẹo chưa
+    // Để MoveManager gọi kiểm tra xem người chơi đã gom đủ kẹo chưa khi hết nước đi
     public bool IsQuestCompleted()
     {
         return isQuestDone;

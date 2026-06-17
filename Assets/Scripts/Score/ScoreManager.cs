@@ -12,7 +12,7 @@ public class ScoreManager : MonoBehaviour
     [Header("Candy Crush Score Settings")]
     public int scorePerCandy = 60;    // Điểm cơ bản cho mỗi viên kẹo nổ
 
-    private int currentScore = 0;     // Tổng điểm tích lũy của màn chơi
+    public int currentScore = 0;     // Tổng điểm tích lũy của màn chơi
     private int comboMultiplier = 1;  // Hệ số nhân nổ chuỗi liên hoàn (Cascade Combo)
 
     private void Awake()

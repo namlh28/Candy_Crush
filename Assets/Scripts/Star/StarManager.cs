@@ -5,24 +5,22 @@ public class StarManager : MonoBehaviour
 {
     public static StarManager Instance { get; private set; }
 
-    [Header("Star Score Thresholds")]
+    [Header("Star Score Thresholds (Chỉ cho Sao 1 và Sao 2)")]
     public int scoreFor1Star = 1000;
     public int scoreFor2Stars = 2500;
-    public int scoreFor3Stars = 5000;
 
-    [Header("UI References (Kéo 3 ngôi sao UI vào đây)")]
+    [Header("UI References")]
     public Slider starSlider;
     public Image star1Image;
     public Image star2Image;
     public Image star3Image;
 
     [Header("Color Settings")]
-    // Màu tối lúc chưa đạt điểm (Màu nâu xám tối)
     public Color lockedColor = new Color(0.3f, 0.2f, 0.1f, 1f);
-    // Màu sáng gốc rực rỡ khi đủ điểm (Màu trắng tinh trong Unity sẽ giữ nguyên màu gốc của ảnh)
     public Color unlockedColor = Color.white;
 
     private int currentStarsEarned = 0;
+    private bool isQuestCompleted = false;
 
     private void Awake()
     {
@@ -35,13 +33,17 @@ public class StarManager : MonoBehaviour
         if (starSlider != null)
         {
             starSlider.minValue = 0;
-            starSlider.maxValue = scoreFor3Stars;
+            // Cho thanh Slider đầy khi đạt mốc 2 sao, hoặc bạn có thể đặt một mốc điểm tối đa tùy ý
+            starSlider.maxValue = scoreFor2Stars * 1.2f;
             starSlider.value = 0;
         }
 
         ResetStarsStatus();
     }
 
+    /// <summary>
+    /// Hàm cập nhật điểm số - Chỉ kiểm tra Sao 1 và Sao 2
+    /// </summary>
     public void UpdateStarMeter(int currentScore)
     {
         if (starSlider != null)
@@ -49,7 +51,7 @@ public class StarManager : MonoBehaviour
             starSlider.value = currentScore;
         }
 
-        // --- KIỂM TRA MỐC 1 SAO ---
+        // Kiểm tra mốc 1 sao dựa vào điểm
         if (currentScore >= scoreFor1Star)
         {
             if (star1Image != null) star1Image.color = unlockedColor;
@@ -60,7 +62,7 @@ public class StarManager : MonoBehaviour
             if (star1Image != null) star1Image.color = lockedColor;
         }
 
-        // --- KIỂM TRA MỐC 2 SAO ---
+        // Kiểm tra mốc 2 sao dựa vào điểm
         if (currentScore >= scoreFor2Stars)
         {
             if (star2Image != null) star2Image.color = unlockedColor;
@@ -70,16 +72,23 @@ public class StarManager : MonoBehaviour
         {
             if (star2Image != null) star2Image.color = lockedColor;
         }
+    }
 
-        // --- KIỂM TRA MỐC 3 SAO ---
-        if (currentScore >= scoreFor3Stars)
+    /// <summary>
+    /// Hàm này sẽ được gọi từ QuestManager khi người chơi hoàn thành nhiệm vụ thu thập kẹo
+    /// </summary>
+    public void CompleteQuestAndEarnThirdStar()
+    {
+        isQuestCompleted = true;
+        if (star3Image != null)
         {
-            if (star3Image != null) star3Image.color = unlockedColor;
-            if (currentStarsEarned < 3) currentStarsEarned = 3;
+            star3Image.color = unlockedColor; // Ngôi sao số 3 hóa vàng!
         }
-        else
+
+        // Cập nhật số lượng sao tối đa thu thập được
+        if (currentStarsEarned < 3)
         {
-            if (star3Image != null) star3Image.color = lockedColor;
+            currentStarsEarned = 3;
         }
     }
 
@@ -89,6 +98,7 @@ public class StarManager : MonoBehaviour
         if (star2Image != null) star2Image.color = lockedColor;
         if (star3Image != null) star3Image.color = lockedColor;
         currentStarsEarned = 0;
+        isQuestCompleted = false;
     }
 
     public int GetStarsEarned()
