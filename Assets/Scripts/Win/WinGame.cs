@@ -9,14 +9,14 @@ public class WinGame : MonoBehaviour
     public static WinGame Instance;
 
     [Header("UI Panels Reference")]
-    public GameObject winPopupPanel;       // Kéo chính Object 'WinPopup' vào đây
-    public TextMeshProUGUI levelText;      // MỚI: Kéo Object 'LevelText' nằm trong WinPopup vào đây
-    public TextMeshProUGUI titleText;      // Kéo Object 'TileText' (Chữ Divine!) vào đây
-    public TextMeshProUGUI scoreText;      // Kéo Object 'ScoreText' hiển thị điểm vào đây
-    public Button nextButton;              // Kéo Object 'NextButton' vào đây
+    public GameObject winPopupPanel;        // Kéo chính Object 'WinPopup' vào đây
+    public TextMeshProUGUI levelText;       // Kéo Object 'LevelText' nằm trong WinPopup vào đây
+    public TextMeshProUGUI titleText;       // Kéo Object 'TileText' (Chữ Divine!) vào đây
+    public TextMeshProUGUI scoreText;       // Kéo Object 'ScoreText' hiển thị điểm vào đây
+    public Button nextButton;               // Kéo Object 'NextButton' vào đây
 
     [Header("Stars UI Setup")]
-    public Image[] stars;                  // Kéo lần lượt Star1, Star2, Star3 vào đây
+    public Image[] stars;                   // Kéo lần lượt Star1, Star2, Star3 vào đây
 
     [Header("Score Thresholds (Chỉ dùng cho 1 và 2 Sao)")]
     public int star1Score = 1500;
@@ -42,15 +42,14 @@ public class WinGame : MonoBehaviour
     {
         winPopupPanel.SetActive(true);
 
-        // TỰ ĐỘNG TÍNH LEVEL CHO WIN POPUP
+        // ĐỒNG BỘ HIỂN THỊ LEVEL CHUẨN TỪ LEVEL MANAGER TRUNG TÂM
         if (levelText != null)
         {
-            int buildIndex = SceneManager.GetActiveScene().buildIndex;
-            // Nếu buildIndex == 0 (Game vào thẳng không có menu), hiển thị Level 1
-            // Sau này khi có Main Menu ở index 0, màn chơi đầu tiên ở index 1 trừ đi 0 vẫn là Level 1! Tự động tăng cho các level sau.
-            int currentLevel = (buildIndex == 0) ? 1 : buildIndex - 1;
-            levelText.text = "Level " + currentLevel;
+            levelText.text = "Level " + LevelManager.CurrentSelectedLevel;
         }
+
+        // TỰ ĐỘNG MỞ KHÓA MÀN CHƠI TIẾP THEO TRÊN BẢN ĐỒ
+        LevelManager.UnlockNextLevel(LevelManager.CurrentSelectedLevel);
 
         foreach (Image star in stars)
         {
@@ -162,17 +161,13 @@ public class WinGame : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Xử lý sự kiện khi nhấn nút Next Level trên popup thắng trận
+    /// </summary>
     public void OnNextLevelButtonClicked()
     {
-        int nextSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
-        if (nextSceneIndex < SceneManager.sceneCountInBuildSettings)
-        {
-            SceneManager.LoadScene(nextSceneIndex);
-        }
-        else
-        {
-            // Nếu hết màn, quay về màn đầu tiên (màn index 0 hoặc index 1 tuỳ cấu trúc menu sau này)
-            SceneManager.LoadScene(0);
-        }
+        // Khi chơi xong một màn, quay về Scene chọn màn (LevelSelect) 
+        // để hệ thống tự load lại danh sách 1000 ô tròn và mở khóa ô tiếp theo.
+        SceneManager.LoadScene("LevelSelect");
     }
 }

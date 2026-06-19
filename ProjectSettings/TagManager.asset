@@ -53,5 +53,23 @@ TagManager:
   - name: UI
     uniqueID: 2696020731
     locked: 0
+  - name: Linemap
+    uniqueID: 1527250757
+    locked: 0
+  - name: Level
+    uniqueID: 843459817
+    locked: 0
+  - name: Table
+    uniqueID: 1884884219
+    locked: 0
+  - name: Play1
+    uniqueID: 483740719
+    locked: 0
+  - name: Play2
+    uniqueID: 2729574533
+    locked: 0
+  - name: Quit
+    uniqueID: 1818362837
+    locked: 0
   m_RenderingLayers:
   - Default
