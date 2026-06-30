@@ -3,20 +3,56 @@
   "WorkspaceRootPath": "C:\\Users\\Admin\\CandyCrush\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{2BA0D314-4863-7171-557D-F758212785DF}|Assembly-CSharp.csproj|c:\\users\\admin\\candycrush\\assets\\scripts\\booster\\boosterselection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BA0D314-4863-7171-557D-F758212785DF}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\booster\\boosterselection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BA0D314-4863-7171-557D-F758212785DF}|Assembly-CSharp.csproj|c:\\users\\admin\\candycrush\\assets\\scripts\\heart\\livesmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BA0D314-4863-7171-557D-F758212785DF}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\heart\\livesmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BA0D314-4863-7171-557D-F758212785DF}|Assembly-CSharp.csproj|C:\\Users\\Admin\\CandyCrush\\assets\\scripts\\heart\\liveuibinder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BA0D314-4863-7171-557D-F758212785DF}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\heart\\liveuibinder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BA0D314-4863-7171-557D-F758212785DF}|Assembly-CSharp.csproj|C:\\Users\\Admin\\CandyCrush\\assets\\scripts\\candy\\candy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BA0D314-4863-7171-557D-F758212785DF}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\candy\\candy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BA0D314-4863-7171-557D-F758212785DF}|Assembly-CSharp.csproj|C:\\Users\\Admin\\CandyCrush\\assets\\scripts\\level\\levelmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BA0D314-4863-7171-557D-F758212785DF}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\level\\levelmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BA0D314-4863-7171-557D-F758212785DF}|Assembly-CSharp.csproj|C:\\Users\\Admin\\CandyCrush\\assets\\scripts\\level\\levelselectorui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BA0D314-4863-7171-557D-F758212785DF}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\level\\levelselectorui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BA0D314-4863-7171-557D-F758212785DF}|Assembly-CSharp.csproj|C:\\Users\\Admin\\CandyCrush\\assets\\scripts\\board\\boardmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BA0D314-4863-7171-557D-F758212785DF}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\board\\boardmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BA0D314-4863-7171-557D-F758212785DF}|Assembly-CSharp.csproj|C:\\Users\\Admin\\CandyCrush\\assets\\scripts\\lose\\losegame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BA0D314-4863-7171-557D-F758212785DF}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\lose\\losegame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BA0D314-4863-7171-557D-F758212785DF}|Assembly-CSharp.csproj|C:\\Users\\Admin\\CandyCrush\\assets\\scripts\\game\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BA0D314-4863-7171-557D-F758212785DF}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\game\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BA0D314-4863-7171-557D-F758212785DF}|Assembly-CSharp.csproj|C:\\Users\\Admin\\CandyCrush\\assets\\scripts\\gold\\goldmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BA0D314-4863-7171-557D-F758212785DF}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gold\\goldmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BA0D314-4863-7171-557D-F758212785DF}|Assembly-CSharp.csproj|C:\\Users\\Admin\\CandyCrush\\assets\\scripts\\move\\movemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BA0D314-4863-7171-557D-F758212785DF}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\move\\movemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{2BA0D314-4863-7171-557D-F758212785DF}|Assembly-CSharp.csproj|C:\\Users\\Admin\\CandyCrush\\assets\\scripts\\win\\wingame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2BA0D314-4863-7171-557D-F758212785DF}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\win\\wingame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2BA0D314-4863-7171-557D-F758212785DF}|Assembly-CSharp.csproj|c:\\users\\admin\\candycrush\\assets\\scripts\\lose\\losegame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2BA0D314-4863-7171-557D-F758212785DF}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\lose\\losegame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2BA0D314-4863-7171-557D-F758212785DF}|Assembly-CSharp.csproj|C:\\Users\\Admin\\CandyCrush\\assets\\scripts\\star\\starmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2BA0D314-4863-7171-557D-F758212785DF}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\star\\starmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2BA0D314-4863-7171-557D-F758212785DF}|Assembly-CSharp.csproj|c:\\users\\admin\\candycrush\\assets\\scripts\\move\\movemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2BA0D314-4863-7171-557D-F758212785DF}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\move\\movemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2BA0D314-4863-7171-557D-F758212785DF}|Assembly-CSharp.csproj|C:\\Users\\Admin\\CandyCrush\\assets\\scripts\\quest\\questmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -25,14 +61,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{2BA0D314-4863-7171-557D-F758212785DF}|Assembly-CSharp.csproj|C:\\Users\\Admin\\CandyCrush\\assets\\scripts\\score\\scoremanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2BA0D314-4863-7171-557D-F758212785DF}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\score\\scoremanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2BA0D314-4863-7171-557D-F758212785DF}|Assembly-CSharp.csproj|C:\\Users\\Admin\\CandyCrush\\assets\\scripts\\board\\boardmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2BA0D314-4863-7171-557D-F758212785DF}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\board\\boardmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2BA0D314-4863-7171-557D-F758212785DF}|Assembly-CSharp.csproj|C:\\Users\\Admin\\CandyCrush\\assets\\scripts\\candy\\candy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2BA0D314-4863-7171-557D-F758212785DF}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\candy\\candy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,75 +70,121 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "BoosterSelection.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\CandyCrush\\Assets\\Scripts\\Booster\\BoosterSelection.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Booster\\BoosterSelection.cs",
+              "ToolTip": "C:\\Users\\Admin\\CandyCrush\\Assets\\Scripts\\Booster\\BoosterSelection.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Booster\\BoosterSelection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-30T03:28:23.418Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "BoardManager.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\CandyCrush\\Assets\\Scripts\\Board\\BoardManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Board\\BoardManager.cs",
+              "ToolTip": "C:\\Users\\Admin\\CandyCrush\\Assets\\Scripts\\Board\\BoardManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Board\\BoardManager.cs",
+              "ViewState": "AgIAAHMBAAAAAAAAAAAhwHAAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-10T02:38:48.606Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "GoldManager.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\CandyCrush\\Assets\\Scripts\\Gold\\GoldManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Gold\\GoldManager.cs",
+              "ToolTip": "C:\\Users\\Admin\\CandyCrush\\Assets\\Scripts\\Gold\\GoldManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Gold\\GoldManager.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAYwCsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-23T07:51:01.408Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LevelManager.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\CandyCrush\\Assets\\Scripts\\Level\\LevelManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Level\\LevelManager.cs",
+              "ToolTip": "C:\\Users\\Admin\\CandyCrush\\Assets\\Scripts\\Level\\LevelManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Level\\LevelManager.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAmwCsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-19T02:44:49.577Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "LoseGame.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\CandyCrush\\Assets\\Scripts\\Lose\\LoseGame.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Lose\\LoseGame.cs",
               "ToolTip": "C:\\Users\\Admin\\CandyCrush\\Assets\\Scripts\\Lose\\LoseGame.cs",
               "RelativeToolTip": "Assets\\Scripts\\Lose\\LoseGame.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAA3wC4AAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAmwFEAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-17T03:48:09.137Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-17T03:48:09.137Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "WinGame.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\CandyCrush\\Assets\\Scripts\\Win\\WinGame.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Win\\WinGame.cs",
-              "ToolTip": "C:\\Users\\Admin\\CandyCrush\\Assets\\Scripts\\Win\\WinGame.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Win\\WinGame.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAAADIAAABFAAAAAAAAAA==",
+              "DocumentIndex": 8,
+              "Title": "GameManager.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\CandyCrush\\Assets\\Scripts\\Game\\GameManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Game\\GameManager.cs",
+              "ToolTip": "C:\\Users\\Admin\\CandyCrush\\Assets\\Scripts\\Game\\GameManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Game\\GameManager.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAA4wBYAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-17T02:46:14.18Z",
+              "WhenOpened": "2026-06-23T10:50:48.29Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "LevelSelectorUI.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\CandyCrush\\Assets\\Scripts\\Level\\LevelSelectorUI.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Level\\LevelSelectorUI.cs",
+              "ToolTip": "C:\\Users\\Admin\\CandyCrush\\Assets\\Scripts\\Level\\LevelSelectorUI.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Level\\LevelSelectorUI.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAiwFoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-19T02:45:28.267Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LivesManager.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\CandyCrush\\Assets\\Scripts\\Heart\\LivesManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Heart\\LivesManager.cs",
+              "ToolTip": "C:\\Users\\Admin\\CandyCrush\\Assets\\Scripts\\Heart\\LivesManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Heart\\LivesManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJ4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-23T10:44:55.011Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "StarManager.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\CandyCrush\\Assets\\Scripts\\Star\\StarManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Star\\StarManager.cs",
-              "ToolTip": "C:\\Users\\Admin\\CandyCrush\\Assets\\Scripts\\Star\\StarManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Star\\StarManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAkAAAAlAAAAAAAAAA==",
+              "Title": "LiveUIBinder.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\CandyCrush\\Assets\\Scripts\\Heart\\LiveUIBinder.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Heart\\LiveUIBinder.cs",
+              "ToolTip": "C:\\Users\\Admin\\CandyCrush\\Assets\\Scripts\\Heart\\LiveUIBinder.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Heart\\LiveUIBinder.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-11T04:45:56.78Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-29T11:10:34.367Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "MoveManager.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\CandyCrush\\Assets\\Scripts\\Move\\MoveManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Move\\MoveManager.cs",
-              "ToolTip": "C:\\Users\\Admin\\CandyCrush\\Assets\\Scripts\\Move\\MoveManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Move\\MoveManager.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAAAAwC0AAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-11T04:35:02.212Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "QuestManager.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\CandyCrush\\Assets\\Scripts\\Quest\\QuestManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Quest\\QuestManager.cs",
-              "ToolTip": "C:\\Users\\Admin\\CandyCrush\\Assets\\Scripts\\Quest\\QuestManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Quest\\QuestManager.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAA+wBQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-11T04:13:47.262Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
               "Title": "Candy.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\CandyCrush\\Assets\\Scripts\\Candy\\Candy.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Candy\\Candy.cs",
@@ -122,7 +196,55 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 13,
+              "Title": "QuestManager.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\CandyCrush\\Assets\\Scripts\\Quest\\QuestManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Quest\\QuestManager.cs",
+              "ToolTip": "C:\\Users\\Admin\\CandyCrush\\Assets\\Scripts\\Quest\\QuestManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Quest\\QuestManager.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAA+wBQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-11T04:13:47.262Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MoveManager.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\CandyCrush\\Assets\\Scripts\\Move\\MoveManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Move\\MoveManager.cs",
+              "ToolTip": "C:\\Users\\Admin\\CandyCrush\\Assets\\Scripts\\Move\\MoveManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Move\\MoveManager.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAAwC0AAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-11T04:35:02.212Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "StarManager.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\CandyCrush\\Assets\\Scripts\\Star\\StarManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Star\\StarManager.cs",
+              "ToolTip": "C:\\Users\\Admin\\CandyCrush\\Assets\\Scripts\\Star\\StarManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Star\\StarManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAkAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-11T04:45:56.78Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "WinGame.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\CandyCrush\\Assets\\Scripts\\Win\\WinGame.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Win\\WinGame.cs",
+              "ToolTip": "C:\\Users\\Admin\\CandyCrush\\Assets\\Scripts\\Win\\WinGame.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Win\\WinGame.cs",
+              "ViewState": "AgIAAJAAAAAAAAAAAAAuwKEAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-17T02:46:14.18Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "ScoreManager.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\CandyCrush\\Assets\\Scripts\\Score\\ScoreManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Score\\ScoreManager.cs",
@@ -131,18 +253,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-11T04:06:07.677Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "BoardManager.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\CandyCrush\\Assets\\Scripts\\Board\\BoardManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Board\\BoardManager.cs",
-              "ToolTip": "C:\\Users\\Admin\\CandyCrush\\Assets\\Scripts\\Board\\BoardManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Board\\BoardManager.cs",
-              "ViewState": "AgIAACsAAAAAAAAAAAAQwEIAAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-10T02:38:48.606Z"
             }
           ]
         }

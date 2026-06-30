@@ -9,10 +9,11 @@ public class LoseGame : MonoBehaviour
     public static LoseGame Instance;
 
     [Header("UI Panels Reference")]
-    public GameObject losePopupPanel;       // Kéo thả Object 'LosePopup' gốc vào đây
-    public TextMeshProUGUI levelText;      // Kéo thả Object 'LevelText' nằm trong LosePopup vào đây
-    public TextMeshProUGUI titleText;      // Kéo thả Text tiêu đề (VD: So Close!) vào đây
-    public Button retryButton;             // Kéo thả Object 'RetryButton' vào đây
+    public GameObject losePopupPanel;
+    public TextMeshProUGUI levelText;
+    public TextMeshProUGUI titleText;
+    public Button retryButton;
+    public Button closeButton;
 
     private void Awake()
     {
@@ -28,6 +29,11 @@ public class LoseGame : MonoBehaviour
         {
             retryButton.onClick.AddListener(OnRetryButtonClicked);
         }
+
+        if (closeButton != null)
+        {
+            closeButton.onClick.AddListener(OnCloseButtonClicked);
+        }
     }
 
     public void ShowLoseWindow()
@@ -36,12 +42,14 @@ public class LoseGame : MonoBehaviour
 
         losePopupPanel.SetActive(true);
 
-        // TỰ ĐỘNG TÍNH LEVEL CHO LOSE POPUP
+        if (LivesManager.Instance != null)
+        {
+            LivesManager.Instance.ReduceLive();
+        }
+
         if (levelText != null)
         {
             int buildIndex = SceneManager.GetActiveScene().buildIndex;
-            // Thuật toán thông minh: Nếu chưa có Main Menu (index đang là 0) thì in ra Level 1.
-            // Sau này nếu có Main Menu chiếm vị trí 0, Scene hiện tại nhảy lên Index 1 -> Code giữ nguyên Level 1 và tự tăng lũy tiến tự động!
             int currentLevel = (buildIndex == 0) ? 1 : buildIndex - 1;
             levelText.text = "Level " + currentLevel;
         }
@@ -77,7 +85,18 @@ public class LoseGame : MonoBehaviour
 
     public void OnRetryButtonClicked()
     {
+        if (LivesManager.Instance != null && !LivesManager.Instance.HasEnoughLives())
+        {
+            Debug.Log("Không đủ mạng để chơi lại!");
+            return;
+        }
+
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(currentSceneIndex);
+    }
+
+    public void OnCloseButtonClicked()
+    {
+        SceneManager.LoadScene("LevelSelect");
     }
 }
